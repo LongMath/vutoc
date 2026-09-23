@@ -496,8 +496,8 @@ st.markdown(
     <style>
     #back-to-top-btn {
         position: fixed;
-        right: 22px;
-        bottom: 22px;
+        left: 20px;
+        bottom: 90px;
         width: 52px;
         height: 52px;
         border-radius: 50%;
@@ -516,8 +516,21 @@ st.markdown(
     #back-to-top-btn:hover { background: #5c1c1c; }
     </style>
     <button id="back-to-top-btn" title="Lên đầu trang" aria-label="Lên đầu trang"
-        onclick="window.scrollTo({top:0, behavior:'smooth'});
-                 try{window.parent.scrollTo({top:0, behavior:'smooth'});}catch(e){}">
+        onclick="
+            var targets = [
+                document.querySelector('section.main'),
+                document.querySelector('[data-testid=\'stAppViewContainer\']'),
+                document.querySelector('[data-testid=\'stMain\']'),
+                document.scrollingElement,
+                document.documentElement,
+                document.body
+            ];
+            targets.forEach(function(el){
+                if (el && typeof el.scrollTo === 'function') {
+                    el.scrollTo({top: 0, behavior: 'smooth'});
+                }
+            });
+        ">
         &#8593;
     </button>
     """,
