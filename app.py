@@ -152,27 +152,25 @@ st.caption(data.get("ghi_chu_chung", ""))
 search = st.text_input("🔍 Tìm tên", "")
 st.divider()
 
-chi_titles = [c["ten"] for c in data["chi"]]
-if data.get("nhap_vu_toc"):
-    chi_titles.append(data["nhap_vu_toc"].get("ten", "Nhập Vũ tộc"))
-view_tabs = st.tabs(chi_titles)
-
-for i, chi in enumerate(data["chi"]):
-    with view_tabs[i]:
-        st.markdown(
-            f"<h2 style='color:#7d2828;border-bottom:2px solid #b8892b;"
-            f"padding-bottom:6px;'>{chi['ten']}</h2>",
-            unsafe_allow_html=True,
-        )
-        render_node(chi["goc"], search=search)
+for chi in data["chi"]:
+    st.markdown(
+        f"<h2 style='color:#7d2828;border-bottom:2px solid #b8892b;"
+        f"padding-bottom:6px;'>{chi['ten']}</h2>",
+        unsafe_allow_html=True,
+    )
+    render_node(chi["goc"], search=search)
 
 if data.get("nhap_vu_toc"):
-    with view_tabs[-1]:
-        nhap = data["nhap_vu_toc"]
-        if nhap.get("ghi_chu"):
-            st.caption(nhap["ghi_chu"])
-        if "goc" in nhap:
-            render_node(nhap["goc"], search=search)
+    nhap = data["nhap_vu_toc"]
+    st.markdown(
+        f"<h2 style='color:#7d2828;border-bottom:2px solid #b8892b;"
+        f"padding-bottom:6px;margin-top:32px;'>{nhap.get('ten', 'Nhập Vũ tộc')}</h2>",
+        unsafe_allow_html=True,
+    )
+    if nhap.get("ghi_chu"):
+        st.caption(nhap["ghi_chu"])
+    if "goc" in nhap:
+        render_node(nhap["goc"], search=search)
 
 st.divider()
 with open(DATA_FILE, "rb") as f:
