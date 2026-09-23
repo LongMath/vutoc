@@ -405,7 +405,7 @@ def build_full_html(data: dict) -> str:
 # App
 # ---------------------------------------------------------------------------
 
-st.set_page_config(page_title="Gia phả Vũ tộc", page_icon="🌳", layout="wide")
+st.set_page_config(page_title="Gia phả Vũ tộc - Thôn Nội Thượng, Xã Hoàng Hoa Thám, Tỉnh Hưng Yên", page_icon="🌳", layout="wide")
 st.markdown(
     "<style>.block-container{padding:0 !important;max-width:100% !important;}"
     "header[data-testid='stHeader']{background:transparent;}</style>",
