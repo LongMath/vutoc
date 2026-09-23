@@ -8,6 +8,7 @@ y hệt nhau, không lệch màu/lệch CSS giữa 2 bản.
 
 import html
 import json
+import re
 import unicodedata
 from pathlib import Path
 
@@ -19,6 +20,14 @@ DATA_FILE = Path(__file__).parent / "gia_pha_tree.json"
 def esc(s: str) -> str:
     s = unicodedata.normalize("NFC", s)
     return html.escape(s, quote=True)
+
+
+def linkify_phone(escaped_text: str) -> str:
+    """Biến số điện thoại Việt Nam (đã escape HTML) thành liên kết tel: bấm gọi được."""
+    def repl(m):
+        digits = re.sub(r"\D", "", m.group(0))
+        return f'<a href="tel:+84{digits[1:]}" class="phone-link">{m.group(0)}</a>'
+    return re.sub(r"0\d{2,3}[.\s]?\d{3}[.\s]?\d{3,4}", repl, escaped_text)
 
 
 CONF_LABEL = {
@@ -263,6 +272,12 @@ TEMPLATE = """<!DOCTYPE html>
     line-height: 1.5;
     text-align: center;
   }}
+  .phone-link {{
+    color: var(--seal);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }}
   .chi-block {{
     margin-bottom: 52px;
     overflow-x: auto;
@@ -462,7 +477,7 @@ def build_full_html(data: dict) -> str:
         hoanh_phi=esc(data.get("hoanh_phi", "")),
         cau_doi_phai=esc(data.get("cau_doi_phai", "")),
         cau_doi_trai=esc(data.get("cau_doi_trai", "")),
-        ghi_chu_chung=esc(data.get("ghi_chu_chung", "")),
+        ghi_chu_chung=linkify_phone(esc(data.get("ghi_chu_chung", ""))),
         chi_blocks=chi_blocks_html,
         nhap_vu_toc=nhap_html,
     )
