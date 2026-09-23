@@ -42,12 +42,14 @@ def build_node(node: dict) -> str:
         items = "".join(f"<li>{build_node(c)}</li>" for c in children)
         children_html = f'<ul class="tree-children">{items}</ul>'
 
-    ngay_sinh = node.get("ngay_sinh") or "Đang cập nhật"
-    nam_mat = node.get("nam_mat") or "Đang cập nhật"
-    meta_html = (
-        f'<div class="person-meta">Sinh: {esc(str(ngay_sinh))} &nbsp;·&nbsp; '
-        f'Mất: {esc(str(nam_mat))}</div>'
-    )
+    ngay_sinh = node.get("ngay_sinh")
+    nam_mat = node.get("nam_mat")
+    meta_html = ""
+    if ngay_sinh or nam_mat:
+        meta_html = (
+            f'<div class="person-meta">Sinh: {esc(str(ngay_sinh or "Đang cập nhật"))} '
+            f'&nbsp;·&nbsp; Mất: {esc(str(nam_mat or "Đang cập nhật"))}</div>'
+        )
 
     return f'''<div class="tree-node conf-{conf}" data-name="{name}">
         <div class="node-card" onclick="toggleNode(this)">
@@ -150,17 +152,13 @@ TEMPLATE = """<!DOCTYPE html>
     writing-mode: vertical-rl;
     font-family: "Noto Serif SC", "Noto Serif", serif;
     font-weight: 700;
-    font-size: clamp(0.95rem, 1.6vw, 1.25rem);
-    letter-spacing: 0.35em;
+    font-size: clamp(0.62rem, 2.8vw, 1.25rem);
+    letter-spacing: clamp(0.12em, 1.6vw, 0.35em);
     color: var(--gold-bright);
     padding-top: 4px;
     flex-shrink: 0;
-    display: none;
   }}
   .hero-center {{ flex: 1; min-width: 0; }}
-  @media (min-width: 820px) {{
-    .cau-doi {{ display: block; }}
-  }}
   .thuy-to-block {{
     display: inline-block;
     margin-top: 22px;
