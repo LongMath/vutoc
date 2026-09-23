@@ -122,22 +122,22 @@
                                 "do_tin_cay": "cao",
                                 "con": [
                                   {
-                                    "ten": "Vũ xxx (Đang cập nhật)",
+                                    "ten": "(Đang cập nhật)",
                                     "doi": 8,
                                     "do_tin_cay": "thap",
                                     "con": [
                                       {
-                                        "ten": "Vũ yyy (Đang cập nhật)",
+                                        "ten": "(Đang cập nhật)",
                                         "doi": 9,
                                         "do_tin_cay": "cao",
                                         "con": [
                                           {
-                                            "ten": "Vũ zzz (Đang cập nhật)",
+                                            "ten": "(Đang cập nhật)",
                                             "doi": 10,
                                             "do_tin_cay": "cao",
                                             "con": [
                                               {
-                                                "ten": "ttt (Đang cập nhật)",
+                                                "ten": "(Đang cập nhật)",
                                                 "doi": 11,
                                                 "do_tin_cay": "cao",
                                                 "con": []
@@ -709,7 +709,7 @@
                     "do_tin_cay": "cao",
                     "con": [
                       {
-                        "ten": "Vũ okt (Đang cập nhật)",
+                        "ten": "(Đang cập nhật)",
                         "doi": 5,
                         "do_tin_cay": "thap",
                         "con": []
@@ -906,7 +906,7 @@
                                 "do_tin_cay": "cao",
                                 "con": [
                                   {
-                                    "ten": "Vũ hkt (Đang cập nhật)",
+                                    "ten": "(Đang cập nhật)",
                                     "doi": 8,
                                     "do_tin_cay": "thap",
                                     "con": []
@@ -997,7 +997,7 @@
                                 "do_tin_cay": "cao",
                                 "con": [
                                   {
-                                    "ten": "Vũ cde (Đang cập nhật)",
+                                    "ten": "(Đang cập nhật)",
                                     "doi": 8,
                                     "do_tin_cay": "thap",
                                     "con": []
@@ -1043,7 +1043,7 @@
                     "do_tin_cay": "cao",
                     "con": [
                       {
-                        "ten": "Vũ kot (Đang cập nhật)",
+                        "ten": "(Đang cập nhật)",
                         "doi": 5,
                         "do_tin_cay": "thap",
                         "con": []
@@ -1352,13 +1352,27 @@
                             "ten": "Vũ Thức",
                             "doi": 6,
                             "do_tin_cay": "cao",
-                            "con": []
+                            "con": [
+                              {
+                                "ten": "(Đang cập nhật)",
+                                "doi": 7,
+                                "do_tin_cay": "thap",
+                                "con": []
+                              }
+                            ]
                           },
                           {
                             "ten": "Vũ Nghi",
                             "doi": 6,
                             "do_tin_cay": "cao",
-                            "con": []
+                            "con": [
+                              {
+                                "ten": "(Đang cập nhật)",
+                                "doi": 7,
+                                "do_tin_cay": "thap",
+                                "con": []
+                              }
+                            ]
                           }
                         ]
                       },
@@ -1388,15 +1402,22 @@
     "ten": "Nhập Vũ tộc",
     "ghi_chu": "Người/nhánh nhập vào họ Vũ, không thuộc huyết thống trực hệ từ Thủy tổ Vũ Kinh.",
     "goc": {
-      "ten": "Vũ Thúy",
-      "doi": null,
+      "ten": "Vũ Thủy",
+      "doi": 8,
       "do_tin_cay": "cao",
       "con": [
         {
           "ten": "Vũ Quý",
-          "doi": null,
+          "doi": 9,
           "do_tin_cay": "cao",
-          "con": []
+          "con": [
+            {
+              "ten": "Vũ Thịnh",
+              "doi": 10,
+              "do_tin_cay": "cao",
+              "con": []
+            }
+          ]
         }
       ]
     }
