@@ -221,6 +221,18 @@ def render_node(node, search=""):
 
 st.set_page_config(page_title="Gia phả Vũ tộc", page_icon="🌳", layout="wide")
 
+st.markdown(
+    """
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+    html, body, [class*="css"] { font-family: "Noto Serif", Georgia, serif; }
+    .block-container { padding-top: 1rem; max-width: 1100px; }
+    div[data-testid="stTabs"] button[aria-selected="true"] { color: #7d2828; font-weight: 700; }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 if "data" not in st.session_state:
     st.session_state.data = load_data()
     ensure_uids(st.session_state.data)
@@ -231,7 +243,32 @@ if "pending" not in st.session_state:
 data = st.session_state.data
 registry = build_registry(data)
 
-st.title("🌳 Gia phả Vũ tộc")
+thuy_to = data.get("thuy_to", "")
+ho = data.get("ho", "Vũ tộc")
+
+st.markdown(
+    f"""
+    <div style="
+        background: radial-gradient(ellipse at top, #3a2417 0%, #2e1b10 60%);
+        margin: -1rem -1rem 24px -1rem;
+        padding: 40px 20px 32px;
+        text-align: center;
+        border-bottom: 4px solid #b8892b;
+        border-radius: 0 0 8px 8px;
+    ">
+        <div style="width:64px;height:3px;background:#d9a544;margin:0 auto 18px;"></div>
+        <div style="letter-spacing:0.18em;font-size:0.78rem;color:#d9a544;margin-bottom:8px;">THỦY TỔ</div>
+        <h1 style="color:#f1e7cf;font-size:2.4rem;margin:0;font-weight:700;">Gia phả {ho}</h1>
+        <div style="margin-top:8px;font-size:1.1rem;color:#e9d9b0;">{thuy_to}</div>
+        <div style="margin-top:20px;font-size:0.85rem;color:#e9d9b0;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+            <span>🟢 Đã đối chiếu ảnh gốc</span>
+            <span>🟡 Khá chắc chắn</span>
+            <span>⚪ Suy luận theo cột — cần đối chiếu</span>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 st.caption(data.get("ghi_chu_chung", ""))
 
 tab_view, tab_manage = st.tabs(["📖 Xem cây", "✏️ Thêm / Sửa / Xóa"])
@@ -239,10 +276,6 @@ tab_view, tab_manage = st.tabs(["📖 Xem cây", "✏️ Thêm / Sửa / Xóa"])
 # ---------------- VIEW TAB ----------------
 with tab_view:
     search = st.text_input("🔍 Tìm tên", "")
-    legend_cols = st.columns(3)
-    legend_cols[0].markdown("🟢 Đã xác nhận")
-    legend_cols[1].markdown("🟡 Khá chắc")
-    legend_cols[2].markdown("⚪ Cần kiểm tra")
     st.divider()
 
     chi_titles = [c["ten"] for c in data["chi"]]
@@ -252,6 +285,11 @@ with tab_view:
 
     for i, chi in enumerate(data["chi"]):
         with view_tabs[i]:
+            st.markdown(
+                f"<h2 style='color:#7d2828;border-bottom:2px solid #b8892b;"
+                f"padding-bottom:6px;'>{chi['ten']}</h2>",
+                unsafe_allow_html=True,
+            )
             render_node(chi["goc"], search=search)
 
     if data.get("nhap_vu_toc"):
