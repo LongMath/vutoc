@@ -26,7 +26,7 @@ def linkify_phone(escaped_text: str) -> str:
     """Biến số điện thoại Việt Nam (đã escape HTML) thành liên kết tel: bấm gọi được."""
     def repl(m):
         digits = re.sub(r"\D", "", m.group(0))
-        return f'<a href="tel:+84{digits[1:]}" class="phone-link">{m.group(0)}</a>'
+        return f'<a href="tel:+84{digits[1:]}" class="phone-link" target="_top">{m.group(0)}</a>'
     return re.sub(r"0\d{2,3}[.\s]?\d{3}[.\s]?\d{3,4}", repl, escaped_text)
 
 
