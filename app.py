@@ -119,6 +119,17 @@ def render_node(node, search=""):
 
 st.set_page_config(page_title="Gia phả Vũ tộc", page_icon="🌳", layout="wide")
 st.markdown(TREE_CSS, unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    section.main > div.block-container,
+    div[data-testid="stAppViewContainer"] .block-container {
+        padding-top: 2rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 data = load_data()
 thuy_to = data.get("thuy_to", "")
@@ -128,20 +139,20 @@ st.markdown(
     f"""
     <div style="
         background: radial-gradient(ellipse at top, #3a2417 0%, #2e1b10 60%);
-        margin: -1rem -1rem 24px -1rem;
+        margin: 0 0 24px 0;
         padding: 40px 20px 32px;
         text-align: center;
         border-bottom: 4px solid #b8892b;
-        border-radius: 0 0 8px 8px;
+        border-radius: 8px;
     ">
         <div style="width:64px;height:3px;background:#d9a544;margin:0 auto 18px;"></div>
         <div style="letter-spacing:0.18em;font-size:0.78rem;color:#d9a544;margin-bottom:8px;">THỦY TỔ</div>
         <h1 style="color:#f1e7cf;font-size:2.4rem;margin:0;font-weight:700;">Gia phả {ho}</h1>
         <div style="margin-top:8px;font-size:1.1rem;color:#e9d9b0;">{thuy_to}</div>
-        <div style="margin-top:20px;font-size:0.85rem;color:#e9d9b0;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
-            <span>🟢 Đã đối chiếu ảnh gốc</span>
-            <span>🟡 Khá chắc chắn</span>
-            <span>⚪ Suy luận theo cột — cần đối chiếu</span>
+        <div style="margin-top:20px;font-size:0.85rem;color:#e9d9b0;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;align-items:center;">
+            <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2f6b3e;margin-right:6px;"></span>Đã đối chiếu ảnh gốc</span>
+            <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#b8892b;margin-right:6px;"></span>Khá chắc chắn</span>
+            <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#9a9188;margin-right:6px;"></span>Suy luận theo cột — cần đối chiếu</span>
         </div>
     </div>
     """,
