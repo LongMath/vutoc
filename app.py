@@ -380,26 +380,6 @@ TEMPLATE = """<!DOCTYPE html>
   }}
   .chip.highlight {{ background: var(--seal); color: #f8ecd0; }}
   footer {{ text-align: center; color: #e9d9b0; font-size: 0.78rem; padding: 22px 20px 40px; }}
-  .back-to-top {{
-    position: fixed;
-    right: 22px;
-    bottom: 22px;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: var(--seal);
-    color: #f6e9c9;
-    border: 2px solid var(--gold-bright);
-    font-size: 1.4rem;
-    line-height: 1;
-    cursor: pointer;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }}
-  .back-to-top:hover {{ background: var(--seal-dark); }}
 </style>
 </head>
 <body>
@@ -432,18 +412,11 @@ TEMPLATE = """<!DOCTYPE html>
   {nhap_vu_toc}
 </main>
 
-<button class="back-to-top" onclick="scrollToTopSafe()" title="Lên đầu trang" aria-label="Lên đầu trang">↑</button>
-
 <footer>
   Bấm vào một ô tên để thu gọn / mở rộng nhánh con. Chấm màu bên phải mỗi tên thể hiện độ tin cậy của quan hệ cha-con.
 </footer>
 
 <script>
-  function scrollToTopSafe() {{
-    try {{ window.parent.scrollTo({{ top: 0, behavior: 'smooth' }}); }} catch(e) {{}}
-    window.scrollTo({{ top: 0, behavior: 'smooth' }});
-  }}
-
   function toggleNode(cardEl) {{
     const node = cardEl.closest('.tree-node');
     const hasChildren = node.querySelector(':scope > ul.tree-children');
@@ -515,6 +488,41 @@ def build_full_html(data: dict) -> str:
 # ---------------------------------------------------------------------------
 
 st.set_page_config(page_title="Gia phả Vũ tộc", page_icon="🌳", layout="wide")
+
+# Nút "lên đầu trang" — đặt ở tầng ngoài (ngoài khung nhúng iframe) để dính
+# theo đúng cửa sổ trình duyệt khi cuộn cả trang Streamlit.
+st.markdown(
+    """
+    <style>
+    #back-to-top-btn {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: #7d2828;
+        color: #f6e9c9;
+        border: 2px solid #d9a544;
+        font-size: 1.4rem;
+        line-height: 1;
+        cursor: pointer;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+        z-index: 999999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #back-to-top-btn:hover { background: #5c1c1c; }
+    </style>
+    <button id="back-to-top-btn" title="Lên đầu trang" aria-label="Lên đầu trang"
+        onclick="window.scrollTo({top:0, behavior:'smooth'});
+                 try{window.parent.scrollTo({top:0, behavior:'smooth'});}catch(e){}">
+        &#8593;
+    </button>
+    """,
+    unsafe_allow_html=True,
+)
 st.markdown(
     "<style>.block-container{padding:0 !important;max-width:100% !important;}"
     "header[data-testid='stHeader']{background:transparent;}"
