@@ -1,7 +1,7 @@
 {
   "ho": "Vũ tộc",
-  "thuy_to": "Vũ Kinh",
-  "ghi_chu_chung": "Các thông tin cần cập nhật liên hệ trực tiếp với Vũ Tuấn Long theo số điện thoại 093511081. Trân trọng cảm ơn!",
+  "thuy_to": "Vũ Kính",
+  "ghi_chu_chung": "Các thông tin cần cập nhật liên hệ trực tiếp với Vũ Tuấn Long theo số điện thoại 0935110981. Trân trọng cảm ơn!",
   "chi": [
     {
       "id": "chi1",
@@ -1400,5 +1400,9 @@
         }
       ]
     }
-  }
+  },
+  "dia_diem": "Thôn Nội Thượng, Xã Hoàng Hoa Thám, Tỉnh Hưng Yên",
+  "hoanh_phi": "武族英靈",
+  "cau_doi_phai": "祖堂靈拜千年盛家風永振",
+  "cau_doi_trai": "子孫敬祭萬代榮世澤長流"
 }

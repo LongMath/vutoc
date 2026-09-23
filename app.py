@@ -42,12 +42,20 @@ def build_node(node: dict) -> str:
         items = "".join(f"<li>{build_node(c)}</li>" for c in children)
         children_html = f'<ul class="tree-children">{items}</ul>'
 
+    ngay_sinh = node.get("ngay_sinh") or "Đang cập nhật"
+    nam_mat = node.get("nam_mat") or "Đang cập nhật"
+    meta_html = (
+        f'<div class="person-meta">Sinh: {esc(str(ngay_sinh))} &nbsp;·&nbsp; '
+        f'Mất: {esc(str(nam_mat))}</div>'
+    )
+
     return f'''<div class="tree-node conf-{conf}" data-name="{name}">
         <div class="node-card" onclick="toggleNode(this)">
             {doi_badge}
             <span class="node-name">{name}</span>
             <span class="conf-dot" title="{esc(conf_label)}"></span>
         </div>
+        {meta_html}
         {children_html}
     </div>'''
 
@@ -94,7 +102,7 @@ TEMPLATE = """<!DOCTYPE html>
 <title>Gia phả {ho} — Thủy tổ {thuy_to}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {{
     --paper: #f1e7cf;
@@ -120,32 +128,71 @@ TEMPLATE = """<!DOCTYPE html>
   }}
   header.hero {{
     text-align: center;
-    padding: 48px 20px 30px;
+    padding: 32px 20px 30px;
     color: var(--paper);
   }}
-  header.hero::before {{
-    content: "";
-    display: block;
-    width: 64px;
-    height: 3px;
-    background: var(--gold-bright);
-    margin: 0 auto 20px;
+  .hoanh-phi {{
+    font-family: "Noto Serif SC", "Noto Serif", serif;
+    font-weight: 700;
+    font-size: clamp(1.4rem, 3.2vw, 2rem);
+    letter-spacing: 0.5em;
+    color: var(--gold-bright);
+    text-indent: 0.5em; /* bù lại letter-spacing thừa ở cuối chữ cuối */
+    margin-bottom: 14px;
+  }}
+  .hero-inner {{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: clamp(10px, 3vw, 40px);
+  }}
+  .cau-doi {{
+    writing-mode: vertical-rl;
+    font-family: "Noto Serif SC", "Noto Serif", serif;
+    font-weight: 700;
+    font-size: clamp(0.95rem, 1.6vw, 1.25rem);
+    letter-spacing: 0.35em;
+    color: var(--gold-bright);
+    padding-top: 4px;
+    flex-shrink: 0;
+    display: none;
+  }}
+  .hero-center {{ flex: 1; min-width: 0; }}
+  @media (min-width: 820px) {{
+    .cau-doi {{ display: block; }}
+  }}
+  .thuy-to-block {{
+    display: inline-block;
+    margin-top: 22px;
+    padding: 10px 28px;
+    border-top: 1px solid var(--gold-bright);
+    border-bottom: 1px solid var(--gold-bright);
   }}
   .thuy-to-label {{
-    letter-spacing: 0.18em;
-    font-size: 0.78rem;
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
     color: var(--gold-bright);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }}
   h1.ho-title {{
     font-size: clamp(2rem, 6vw, 3.4rem);
     margin: 0;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }}
+  .dia-diem {{
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #e9d9b0;
+    text-align: center;
   }}
   .thuy-to-name {{
-    margin-top: 8px;
-    font-size: 1.1rem;
-    color: #e9d9b0;
+    font-size: 1.5rem;
+    color: #f6e9c9;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }}
   .legend {{
     display: flex;
@@ -182,6 +229,17 @@ TEMPLATE = """<!DOCTYPE html>
     cursor: pointer;
     font-family: inherit;
   }}
+  .search-hint {{
+    text-align: center;
+    color: #b39a6d;
+    font-size: 0.72rem;
+    margin-top: 6px;
+  }}
+  .person-meta {{
+    font-size: 0.68rem;
+    color: #8a7a5c;
+    margin: 2px 0 0 4px;
+  }}
   #search-status {{
     text-align: center;
     color: #e9d9b0;
@@ -196,7 +254,7 @@ TEMPLATE = """<!DOCTYPE html>
     border-bottom: 4px solid var(--gold);
   }}
   .ghi-chu-chung {{
-    max-width: 720px;
+    max-width: min(1000px, 92%);
     margin: 0 auto 40px;
     background: #fbf5e6;
     border: 1px solid var(--gold);
@@ -205,6 +263,7 @@ TEMPLATE = """<!DOCTYPE html>
     font-size: 0.85rem;
     color: #4a3a24;
     line-height: 1.5;
+    text-align: center;
   }}
   .chi-block {{
     margin-bottom: 52px;
@@ -313,19 +372,25 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 
 <header class="hero">
-  <div class="thuy-to-label">THỦY TỔ</div>
-  <h1 class="ho-title">Gia phả {ho}</h1>
-  <div class="thuy-to-name">{thuy_to}</div>
-  <div class="legend">
-    <span><span class="dot" style="background:var(--conf-cao)"></span> Đã đối chiếu ảnh gốc</span>
-    <span><span class="dot" style="background:var(--conf-trungbinh)"></span> Khá chắc chắn</span>
-    <span><span class="dot" style="background:var(--conf-thap)"></span> Suy luận theo cột — cần đối chiếu</span>
-  </div>
-  <div class="search-bar">
+  <div class="hoanh-phi">{hoanh_phi}</div>
+  <div class="hero-inner">
+    <div class="cau-doi cau-doi-trai">{cau_doi_trai}</div>
+    <div class="hero-center">
+      <h1 class="ho-title">Gia phả {ho}</h1>
+      <div class="dia-diem">{dia_diem}</div>
+      <div class="thuy-to-block">
+        <div class="thuy-to-label">THỦY TỔ</div>
+        <div class="thuy-to-name">{thuy_to}</div>
+      </div>
+    <div class="search-bar">
     <input type="text" id="search-input" placeholder="Tìm tên trong gia phả…" onkeydown="if(event.key==='Enter') searchName()">
     <button onclick="searchName()">Tìm</button>
   </div>
   <div id="search-status"></div>
+    </div>
+    <div class="cau-doi cau-doi-phai">{cau_doi_phai}</div>
+  </div>
+  <div class="search-hint">Hướng dẫn: Gõ Họ Tên để tìm (hiện dữ liệu chưa có tên đệm; khi bổ sung tên đệm, tìm kiếm vẫn nhận diện gần đúng theo một phần tên).</div>
 </header>
 
 <main>
@@ -395,6 +460,10 @@ def build_full_html(data: dict) -> str:
     return TEMPLATE.format(
         ho=esc(data.get("ho", "")),
         thuy_to=esc(data.get("thuy_to", "")),
+        dia_diem=esc(data.get("dia_diem", "")),
+        hoanh_phi=esc(data.get("hoanh_phi", "")),
+        cau_doi_phai=esc(data.get("cau_doi_phai", "")),
+        cau_doi_trai=esc(data.get("cau_doi_trai", "")),
         ghi_chu_chung=esc(data.get("ghi_chu_chung", "")),
         chi_blocks=chi_blocks_html,
         nhap_vu_toc=nhap_html,
@@ -408,19 +477,117 @@ def build_full_html(data: dict) -> str:
 st.set_page_config(page_title="Gia phả Vũ tộc", page_icon="🌳", layout="wide")
 st.markdown(
     "<style>.block-container{padding:0 !important;max-width:100% !important;}"
-    "header[data-testid='stHeader']{background:transparent;}</style>",
+    "header[data-testid='stHeader']{background:transparent;}"
+    ".placeholder-wrap{max-width:760px;margin:32px auto;padding:0 20px;"
+    "font-family:'Noto Serif',Georgia,serif;}"
+    ".placeholder-card{background:#f1e7cf;border:1px solid #b8892b;"
+    "border-radius:10px;padding:28px 28px;}"
+    ".placeholder-card h2{color:#7d2828;margin:0 0 10px;font-size:1.4rem;}"
+    ".placeholder-card p{color:#2b2016;line-height:1.6;margin:0 0 14px;}"
+    ".placeholder-badge{display:inline-block;background:#e4d5ae;color:#7d2828;"
+    "border:1px solid #b8892b;border-radius:20px;padding:4px 14px;"
+    "font-size:0.82rem;font-weight:600;}"
+    "</style>",
     unsafe_allow_html=True,
 )
 
 with open(DATA_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-full_html = build_full_html(data)
-st.iframe(full_html, width="stretch", height="content")
 
-st.download_button(
-    "⬇️ Tải xuống gia_pha_tree.json hiện tại",
-    data=json.dumps(data, ensure_ascii=False, indent=2).encode("utf-8"),
-    file_name="gia_pha_tree.json",
-    mime="application/json",
-)
+def placeholder_tab(title, description, badge="🚧 Đang xây dựng"):
+    st.markdown(
+        f"""
+        <div class="placeholder-wrap">
+            <div class="placeholder-card">
+                <h2>{esc(title)}</h2>
+                <p>{esc(description)}</p>
+                <span class="placeholder-badge">{esc(badge)}</span>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+TABS = [
+    "🌳 Cây gia phả",
+    "👤 Hồ sơ thành viên",
+    "📅 Giỗ chạp & sự kiện",
+    "🔍 Thống kê & tra cứu",
+    "🔒 Phân quyền & bảo mật",
+    "💰 Quỹ dòng họ",
+    "💬 Diễn đàn nội bộ",
+    "✏️ Thêm / Sửa / Xóa",
+]
+tabs = st.tabs(TABS)
+
+with tabs[0]:
+    full_html = build_full_html(data)
+    st.iframe(full_html, width="stretch", height="content")
+    st.markdown('<div class="placeholder-wrap" style="margin-top:0;">', unsafe_allow_html=True)
+    st.download_button(
+        "⬇️ Tải xuống gia_pha_tree.json hiện tại",
+        data=json.dumps(data, ensure_ascii=False, indent=2).encode("utf-8"),
+        file_name="gia_pha_tree.json",
+        mime="application/json",
+    )
+    st.markdown("</div>", unsafe_allow_html=True)
+
+with tabs[1]:
+    placeholder_tab(
+        "Hồ sơ thành viên",
+        "Lưu trữ thông tin cá nhân từng người: ngày sinh, quê quán, tiểu sử, "
+        "hình ảnh, nghề nghiệp, thành tích và vị trí mộ phần. Ngày sinh/năm mất "
+        "đã có chỗ hiển thị trong cây (hiện để 'Đang cập nhật' vì chưa có dữ liệu) "
+        "— trang hồ sơ chi tiết đầy đủ hơn sẽ có ở bản sau.",
+    )
+
+with tabs[2]:
+    placeholder_tab(
+        "Nhắc lịch giỗ chạp, sự kiện",
+        "Tự động thông báo ngày giỗ (theo âm lịch và dương lịch), sinh nhật, "
+        "hoặc các buổi họp mặt, lễ hội của dòng họ.",
+    )
+
+with tabs[3]:
+    placeholder_tab(
+        "Thống kê & tra cứu",
+        "Tra cứu nhanh thông tin thành viên theo tên, đời thứ mấy, chi phái, "
+        "hoặc tìm đường đi giữa các mối quan hệ họ hàng (vd: hai người là "
+        "họ hàng đời thứ mấy với nhau). Tìm theo tên đơn giản hiện đã có sẵn "
+        "ở tab Cây gia phả.",
+    )
+
+with tabs[4]:
+    placeholder_tab(
+        "Phân quyền & bảo mật",
+        "Cho phép nhiều thành viên trong họ cùng xem hoặc đóng góp dữ liệu, "
+        "nhưng có cơ chế phân quyền chỉnh sửa để bảo vệ thông tin riêng tư "
+        "(ai được xem, ai được sửa).",
+    )
+
+with tabs[5]:
+    placeholder_tab(
+        "Quản lý quỹ dòng họ",
+        "Theo dõi thu chi tài chính, đóng góp xây dựng từ đường, quỹ khuyến "
+        "học, hoặc các hoạt động thiện nguyện của dòng họ.",
+    )
+
+with tabs[6]:
+    placeholder_tab(
+        "Diễn đàn / Truyền thông nội bộ",
+        "Nơi con cháu ở xa cập nhật tin tức, gửi lời chúc mừng, chia sẻ hình "
+        "ảnh sinh hoạt chung của gia đình.",
+    )
+
+with tabs[7]:
+    placeholder_tab(
+        "Thêm / Sửa / Xóa (Quản trị)",
+        "Thêm người mới, sửa tên/thông tin, hoặc xóa một người khỏi cây — mỗi "
+        "thao tác đều cần xem trước và xác nhận trước khi lưu. Tính năng này "
+        "từng có ở bản thử nghiệm trước, sẽ đưa trở lại có kiểm soát quyền "
+        "truy cập ở phiên bản sau (dành riêng cho admin).",
+        badge="🚧 Đang cập nhật — sẽ có ở bản sau",
+    )
+
