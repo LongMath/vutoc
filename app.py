@@ -536,7 +536,12 @@ st.iframe(
 )
 st.markdown(
     "<style>.block-container{padding:0 !important;max-width:100% !important;}"
-    "header[data-testid='stHeader']{background:transparent;}"
+    "header[data-testid='stHeader']{background:transparent;height:0 !important;"
+    "min-height:0 !important;padding:0 !important;margin:0 !important;}"
+    "div[data-testid='stAppViewContainer']{padding-top:0 !important;}"
+    "div[data-testid='stAppViewContainer'] > .main{padding-top:0 !important;}"
+    "div[data-testid='stMain']{padding-top:0 !important;}"
+    "div[data-testid='stMainBlockContainer']{padding-top:0.5rem !important;}"
     "#MainMenu{visibility:hidden;}"
     "footer{visibility:hidden;}"
     "div[data-testid='stToolbar']{visibility:hidden;}"
