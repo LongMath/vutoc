@@ -123,24 +123,96 @@ def all_options(registry):
 # Rendering
 # ---------------------------------------------------------------------------
 
-def render_node(node, depth=0, search=""):
+TREE_CSS = """
+<style>
+.tree-wrap {
+    overflow-x: auto;
+    padding: 12px 4px 24px;
+    background: #f1e7cf;
+    border-radius: 8px;
+}
+ul.tree-children {
+    list-style: none;
+    margin: 0;
+    padding-left: 26px;
+    position: relative;
+}
+ul.tree-children.top-level { padding-left: 0; }
+ul.tree-children li {
+    position: relative;
+    padding: 7px 0 0 20px;
+}
+ul.tree-children.top-level > li { padding-left: 0; }
+ul.tree-children li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 20px; height: 20px;
+    border-left: 1.5px solid #a98a55;
+    border-bottom: 1.5px solid #a98a55;
+}
+ul.tree-children.top-level > li::before { display: none; }
+ul.tree-children li::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 20px; bottom: 0; width: 0;
+    border-left: 1.5px solid #a98a55;
+}
+ul.tree-children li:last-child::after { display: none; }
+.node-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: #fbf5e6;
+    border: 1px solid #4a2f1f;
+    border-radius: 4px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    font-size: 0.88rem;
+    color: #2b2016;
+}
+.node-card.hl { background: #fff3b0; border-color: #b8892b; }
+.doi-badge {
+    font-size: 0.62rem;
+    color: #b8892b;
+    border: 1px solid #b8892b;
+    border-radius: 3px;
+    padding: 0 4px;
+}
+.conf-dot { font-size: 0.7rem; }
+.ghi-chu-inline { color: #8a7a5c; font-size: 0.78rem; }
+</style>
+"""
+
+
+def node_to_html(node, search=""):
     conf = node.get("do_tin_cay", "thap")
     color = CONF_COLOR.get(conf, "#9a9188")
-    doi = f"Đời {node['doi']} — " if node.get("doi") is not None else ""
+    doi = node.get("doi")
+    doi_html = f"<span class='doi-badge'>Đời {doi}</span>" if doi is not None else ""
     name = node["ten"]
-    highlight = search and search.lower() in name.lower()
-    bg = "background:#fff3b0;" if highlight else ""
+    hl = " hl" if (search and search.lower() in name.lower()) else ""
     ghi_chu = node.get("ghi_chu") or node.get("ghi_chu_diadanh")
-    ghi_chu_html = f" <span style='color:#888;font-size:0.85em;'>— {ghi_chu}</span>" if ghi_chu else ""
-    st.markdown(
-        f"<div style='margin-left:{depth*22}px; padding:2px 6px; {bg}'>"
-        f"<span style='color:{color};'>●</span> "
-        f"<b>{doi}{name}</b>{ghi_chu_html}"
-        f"</div>",
-        unsafe_allow_html=True,
+    ghi_chu_html = f"<span class='ghi-chu-inline'>— {ghi_chu}</span>" if ghi_chu else ""
+    card = (
+        f"<div class='node-card{hl}'>{doi_html} <b>{name}</b> "
+        f"<span class='conf-dot' style='color:{color};'>●</span> {ghi_chu_html}</div>"
     )
-    for c in node.get("con", []):
-        render_node(c, depth + 1, search)
+    children = node.get("con", [])
+    children_html = ""
+    if children:
+        items = "".join(f"<li>{node_to_html(c, search)}</li>" for c in children)
+        children_html = f"<ul class='tree-children'>{items}</ul>"
+    return card + children_html
+
+
+def render_node(node, search=""):
+    html = TREE_CSS + (
+        "<div class='tree-wrap'><ul class='tree-children top-level'><li>"
+        + node_to_html(node, search)
+        + "</li></ul></div>"
+    )
+    st.markdown(html, unsafe_allow_html=True)
 
 
 # ---------------------------------------------------------------------------
