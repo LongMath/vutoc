@@ -476,6 +476,9 @@ st.set_page_config(page_title="Gia phả Vũ tộc", page_icon="🌳", layout="w
 st.markdown(
     "<style>.block-container{padding:0 !important;max-width:100% !important;}"
     "header[data-testid='stHeader']{background:transparent;}"
+    "#MainMenu{visibility:hidden;}"
+    "footer{visibility:hidden;}"
+    "div[data-testid='stToolbar']{visibility:hidden;}"
     ".placeholder-wrap{max-width:760px;margin:32px auto;padding:0 20px;"
     "font-family:'Noto Serif',Georgia,serif;}"
     ".placeholder-card{background:#f1e7cf;border:1px solid #b8892b;"
