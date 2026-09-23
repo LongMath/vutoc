@@ -489,52 +489,50 @@ def build_full_html(data: dict) -> str:
 
 st.set_page_config(page_title="Gia phả Vũ tộc", page_icon="🌳", layout="wide")
 
-# Nút "lên đầu trang" — đặt ở tầng ngoài (ngoài khung nhúng iframe) để dính
-# theo đúng cửa sổ trình duyệt khi cuộn cả trang Streamlit.
-st.markdown(
+# Nút "lên đầu trang" — chèn bằng script thật (qua iframe ẩn) để chắc chắn sự
+# kiện click được gắn đúng cách, thay vì dựa vào thuộc tính onclick trong
+# st.markdown (có thể bị Streamlit lược bỏ khi render).
+st.iframe(
     """
-    <style>
-    #back-to-top-btn {
-        position: fixed;
-        left: 20px;
-        bottom: 90px;
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        background: #7d2828;
-        color: #f6e9c9;
-        border: 2px solid #d9a544;
-        font-size: 1.4rem;
-        line-height: 1;
-        cursor: pointer;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.35);
-        z-index: 999999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #back-to-top-btn:hover { background: #5c1c1c; }
-    </style>
-    <button id="back-to-top-btn" title="Lên đầu trang" aria-label="Lên đầu trang"
-        onclick="
-            var targets = [
-                document.querySelector('section.main'),
-                document.querySelector('[data-testid=\'stAppViewContainer\']'),
-                document.querySelector('[data-testid=\'stMain\']'),
-                document.scrollingElement,
-                document.documentElement,
-                document.body
+    <script>
+    (function() {
+        const doc = window.parent.document;
+        if (doc.getElementById('back-to-top-btn')) return;  // tránh chèn trùng khi rerun
+        const btn = doc.createElement('button');
+        btn.id = 'back-to-top-btn';
+        btn.innerHTML = '&#8593;';
+        btn.title = 'Lên đầu trang';
+        btn.setAttribute('aria-label', 'Lên đầu trang');
+        btn.style.cssText = [
+            'position:fixed', 'left:20px', 'bottom:90px', 'width:52px', 'height:52px',
+            'border-radius:50%', 'background:#7d2828', 'color:#f6e9c9',
+            'border:2px solid #d9a544', 'font-size:1.4rem', 'cursor:pointer',
+            'box-shadow:0 3px 10px rgba(0,0,0,0.35)', 'z-index:999999',
+            'display:flex', 'align-items:center', 'justify-content:center'
+        ].join(';');
+        btn.addEventListener('mouseenter', function(){ btn.style.background = '#5c1c1c'; });
+        btn.addEventListener('mouseleave', function(){ btn.style.background = '#7d2828'; });
+        btn.addEventListener('click', function() {
+            const candidates = [
+                doc.querySelector('section.main'),
+                doc.querySelector('[data-testid="stAppViewContainer"]'),
+                doc.querySelector('[data-testid="stMain"]'),
+                doc.scrollingElement,
+                doc.documentElement,
+                doc.body
             ];
-            targets.forEach(function(el){
+            candidates.forEach(function(el) {
                 if (el && typeof el.scrollTo === 'function') {
-                    el.scrollTo({top: 0, behavior: 'smooth'});
+                    el.scrollTo({ top: 0, behavior: 'smooth' });
                 }
             });
-        ">
-        &#8593;
-    </button>
+        });
+        doc.body.appendChild(btn);
+    })();
+    </script>
     """,
-    unsafe_allow_html=True,
+    width=1,
+    height="content",
 )
 st.markdown(
     "<style>.block-container{padding:0 !important;max-width:100% !important;}"
