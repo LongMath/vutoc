@@ -633,12 +633,6 @@
                                         "ten": "Vũ Bách",
                                         "doi": 9,
                                         "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Khải",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
                                         "con": [
                                           {
                                             "ten": "Vũ Long",
@@ -647,6 +641,12 @@
                                             "con": []
                                           }
                                         ]
+                                      },
+                                      {
+                                        "ten": "Vũ Khải",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
                                       }
                                     ]
                                   },
