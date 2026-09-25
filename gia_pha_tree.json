@@ -7,47 +7,60 @@
       "id": "chi1",
       "ten": "Chi 1",
       "goc": {
-        "ten": "Tồn Nghi",
+        "ten": "Vũ Kính",
         "doi": 1,
         "do_tin_cay": "cao",
         "con": [
           {
-            "ten": "Vũ Chè",
+            "ten": "Tồn Nghi",
             "doi": 2,
             "do_tin_cay": "cao",
             "con": [
               {
-                "ten": "Tồn Nghi",
+                "ten": "Vũ Chè",
                 "doi": 3,
                 "do_tin_cay": "cao",
                 "con": [
                   {
-                    "ten": "Vũ Mền",
+                    "ten": "Tồn Nghi",
                     "doi": 4,
                     "do_tin_cay": "cao",
                     "con": [
                       {
-                        "ten": "Vũ Sáu",
+                        "ten": "Vũ Mền",
                         "doi": 5,
                         "do_tin_cay": "cao",
                         "con": [
                           {
-                            "ten": "Vũ Ngữ",
+                            "ten": "Vũ Sáu",
                             "doi": 6,
                             "do_tin_cay": "cao",
                             "con": [
                               {
-                                "ten": "Vũ Ngôn",
+                                "ten": "Vũ Ngữ",
                                 "doi": 7,
                                 "do_tin_cay": "cao",
                                 "con": [
                                   {
-                                    "ten": "Vũ Luận",
+                                    "ten": "Vũ Ngôn",
                                     "doi": 8,
                                     "do_tin_cay": "cao",
                                     "con": [
                                       {
-                                        "ten": "Vũ Nan",
+                                        "ten": "Vũ Luận",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Nan",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Bình",
                                         "doi": 9,
                                         "do_tin_cay": "cao",
                                         "con": []
@@ -55,89 +68,28 @@
                                     ]
                                   },
                                   {
-                                    "ten": "Vũ Bình",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Cát",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Tuyển",
+                                    "ten": "Vũ Cát",
                                     "doi": 8,
                                     "do_tin_cay": "cao",
                                     "con": [
                                       {
-                                        "ten": "Vũ Tùng",
+                                        "ten": "Vũ Tuyển",
                                         "doi": 9,
                                         "do_tin_cay": "cao",
                                         "con": [
                                           {
-                                            "ten": "Vũ Bách",
-                                            "doi": 10,
-                                            "do_tin_cay": "cao",
-                                            "con": []
-                                          },
-                                          {
-                                            "ten": "Vũ Trường",
-                                            "doi": 10,
-                                            "do_tin_cay": "cao",
-                                            "con": []
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ten": "Vũ Mạo",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "Vũ Cốc",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Toán",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Quang",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "(Đang cập nhật)",
-                                    "doi": 8,
-                                    "do_tin_cay": "thap",
-                                    "con": [
-                                      {
-                                        "ten": "(Đang cập nhật)",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": [
-                                          {
-                                            "ten": "(Đang cập nhật)",
+                                            "ten": "Vũ Tùng",
                                             "doi": 10,
                                             "do_tin_cay": "cao",
                                             "con": [
                                               {
-                                                "ten": "(Đang cập nhật)",
+                                                "ten": "Vũ Bách",
+                                                "doi": 11,
+                                                "do_tin_cay": "cao",
+                                                "con": []
+                                              },
+                                              {
+                                                "ten": "Vũ Trường",
                                                 "doi": 11,
                                                 "do_tin_cay": "cao",
                                                 "con": []
@@ -149,493 +101,106 @@
                                     ]
                                   }
                                 ]
-                              },
-                              {
-                                "ten": "Vũ Tuấn",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": []
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "ten": "Vũ Chấp (cụ Thủ Chấp)",
-                "doi": 3,
-                "do_tin_cay": "cao",
-                "con": [
-                  {
-                    "ten": "Vũ Lăng (cụ Lý Lăng)",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "Vũ Khắc (cụ Vệ Khắc)",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Trung",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Vui",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Ngọc",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Huy",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "ten": "Vũ Thịnh",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Quang",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Hậu",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Anh",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Thanh",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Thuận",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Đăng",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Hùng",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Mạnh",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Trí",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Thiện",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "ten": "Vũ Tiến",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
                               }
                             ]
                           }
                         ]
                       },
                       {
-                        "ten": "Vũ Khả",
+                        "ten": "Vũ Mạo",
                         "doi": 5,
                         "do_tin_cay": "cao",
                         "con": [
                           {
-                            "ten": "Bà Sâm",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": []
-                          },
-                          {
-                            "ten": "Bà Si",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": []
-                          },
-                          {
-                            "ten": "Bà Sọc",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ten": "Vũ Châu",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "chi2",
-      "ten": "Chi 2",
-      "goc": {
-        "ten": "Vũ Lành",
-        "doi": 1,
-        "do_tin_cay": "cao",
-        "con": [
-          {
-            "ten": "Vũ Đức (cụ Sự Đức)",
-            "doi": 2,
-            "do_tin_cay": "cao",
-            "con": [
-              {
-                "ten": "Vũ Kiền (cụ Vệ Kiền)",
-                "doi": 3,
-                "do_tin_cay": "cao",
-                "con": [
-                  {
-                    "ten": "Vũ Toàn (cụ Vệ Toàn)",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": []
-                  },
-                  {
-                    "ten": "Vũ Thoa (cụ Đoàn Thoa)",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": []
-                  },
-                  {
-                    "ten": "Vũ Giáo (cụ Đồ Giáo)",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": []
-                  },
-                  {
-                    "ten": "Vũ Nhung (cụ Đoàn Nhung)",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "Vũ Đồng (cụ Xã Đồng)",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Khoa",
+                            "ten": "Vũ Cốc",
                             "doi": 6,
                             "do_tin_cay": "cao",
                             "con": [
                               {
-                                "ten": "Vũ Khoát",
+                                "ten": "Vũ Toán",
                                 "doi": 7,
                                 "do_tin_cay": "cao",
                                 "con": [
                                   {
-                                    "ten": "Vũ Minh",
+                                    "ten": "Vũ Quang",
                                     "doi": 8,
                                     "do_tin_cay": "cao",
                                     "con": [
                                       {
-                                        "ten": "Vũ Hùng",
+                                        "ten": "(Đang cập nhật)",
                                         "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Nhì",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Hiệp",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Cường",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
+                                        "do_tin_cay": "thap",
+                                        "con": [
+                                          {
+                                            "ten": "(Đang cập nhật)",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": [
+                                              {
+                                                "ten": "(Đang cập nhật)",
+                                                "doi": 11,
+                                                "do_tin_cay": "cao",
+                                                "con": [
+                                                  {
+                                                    "ten": "(Đang cập nhật)",
+                                                    "doi": 12,
+                                                    "do_tin_cay": "cao",
+                                                    "con": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
                                       }
                                     ]
                                   },
                                   {
-                                    "ten": "Vũ Hòa",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Thuận",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "ten": "Vũ Thắng",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Phong",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Tuấn",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Dũng",
+                                    "ten": "Vũ Tuấn",
                                     "doi": 8,
                                     "do_tin_cay": "cao",
                                     "con": []
-                                  },
-                                  {
-                                    "ten": "Vũ Diệp",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Kiệt",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Nhân",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Bảo",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Triết",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Tư",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Long",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Thành",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Năm",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Thịnh",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Phú",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Phong",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "ten": "Vũ Hưng",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Hiếu",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Huỳnh",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Sơn",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Bảo",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Quân",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Tám",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Hưởng",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Phong",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
                                   }
                                 ]
                               }
                             ]
-                          },
-                          {
-                            "ten": "Vũ Toản",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": []
                           }
                         ]
                       }
                     ]
                   },
                   {
-                    "ten": "Vũ Duyên",
+                    "ten": "Vũ Chấp (cụ Thủ Chấp)",
                     "doi": 4,
                     "do_tin_cay": "cao",
                     "con": [
                       {
-                        "ten": "Vũ Thựu",
+                        "ten": "Vũ Lăng (cụ Lý Lăng)",
                         "doi": 5,
                         "do_tin_cay": "cao",
                         "con": [
                           {
-                            "ten": "Vũ Nhiễu",
+                            "ten": "Vũ Khắc (cụ Vệ Khắc)",
                             "doi": 6,
                             "do_tin_cay": "cao",
                             "con": [
                               {
-                                "ten": "Vũ Mậu",
+                                "ten": "Vũ Trung",
                                 "doi": 7,
                                 "do_tin_cay": "cao",
                                 "con": [
                                   {
-                                    "ten": "Vũ Minh",
+                                    "ten": "Vũ Vui",
                                     "doi": 8,
                                     "do_tin_cay": "cao",
                                     "con": [
                                       {
-                                        "ten": "Vũ Bách",
+                                        "ten": "Vũ Ngọc",
                                         "doi": 9,
                                         "do_tin_cay": "cao",
                                         "con": [
                                           {
-                                            "ten": "Vũ Long",
+                                            "ten": "Vũ Huy",
                                             "doi": 10,
                                             "do_tin_cay": "cao",
                                             "con": []
@@ -643,7 +208,7 @@
                                         ]
                                       },
                                       {
-                                        "ten": "Vũ Khải",
+                                        "ten": "Vũ Thịnh",
                                         "doi": 9,
                                         "do_tin_cay": "cao",
                                         "con": []
@@ -651,36 +216,63 @@
                                     ]
                                   },
                                   {
-                                    "ten": "Vũ Mạnh",
+                                    "ten": "Vũ Quang",
                                     "doi": 8,
                                     "do_tin_cay": "cao",
                                     "con": [
                                       {
-                                        "ten": "Vũ Duy",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Đạt",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "ten": "Vũ Đức",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Thành",
+                                        "ten": "Vũ Hậu",
                                         "doi": 9,
                                         "do_tin_cay": "cao",
                                         "con": [
                                           {
-                                            "ten": "Vũ Sơn",
+                                            "ten": "Vũ Anh",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Thanh",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Thuận",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Đăng",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Hùng",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Mạnh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Trí",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Thiện",
                                             "doi": 10,
                                             "do_tin_cay": "cao",
                                             "con": []
@@ -698,46 +290,748 @@
                                 ]
                               }
                             ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ten": "Vũ Lừng",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "(Đang cập nhật)",
-                        "doi": 5,
-                        "do_tin_cay": "thap",
-                        "con": []
-                      }
-                    ]
-                  },
-                  {
-                    "ten": "Vũ Dớm",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "Vũ Miêu",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
+                          },
                           {
-                            "ten": "Vũ Miều",
+                            "ten": "Vũ Khả",
                             "doi": 6,
                             "do_tin_cay": "cao",
                             "con": [
                               {
-                                "ten": "Vũ Thái",
+                                "ten": "Bà Sâm",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": []
+                              },
+                              {
+                                "ten": "Bà Si",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": []
+                              },
+                              {
+                                "ten": "Bà Sọc",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "ten": "Vũ Châu",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "chi2",
+      "ten": "Chi 2",
+      "goc": {
+        "ten": "Vũ Kính",
+        "doi": 1,
+        "do_tin_cay": "cao",
+        "con": [
+          {
+            "ten": "Vũ Lành",
+            "doi": 2,
+            "do_tin_cay": "cao",
+            "con": [
+              {
+                "ten": "Vũ Đức (cụ Sự Đức)",
+                "doi": 3,
+                "do_tin_cay": "cao",
+                "con": [
+                  {
+                    "ten": "Vũ Kiền (cụ Vệ Kiền)",
+                    "doi": 4,
+                    "do_tin_cay": "cao",
+                    "con": [
+                      {
+                        "ten": "Vũ Toàn (cụ Vệ Toàn)",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": []
+                      },
+                      {
+                        "ten": "Vũ Thoa (cụ Đoàn Thoa)",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": []
+                      },
+                      {
+                        "ten": "Vũ Giáo (cụ Đồ Giáo)",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": []
+                      },
+                      {
+                        "ten": "Vũ Nhung (cụ Đoàn Nhung)",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": [
+                          {
+                            "ten": "Vũ Đồng (cụ Xã Đồng)",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Khoa",
                                 "doi": 7,
                                 "do_tin_cay": "cao",
                                 "con": [
                                   {
-                                    "ten": "Vũ Thành",
+                                    "ten": "Vũ Khoát",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Minh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Hùng",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Nhì",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Hiệp",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Cường",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Hòa",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Thuận",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Thắng",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Phong",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Tuấn",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Dũng",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      },
+                                      {
+                                        "ten": "Vũ Diệp",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Kiệt",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Nhân",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Bảo",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Triết",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Tư",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Long",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Thành",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Năm",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Thịnh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Phú",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Phong",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Hưng",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Hiếu",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Huỳnh",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Sơn",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Bảo",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Quân",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Tám",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Hưởng",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Phong",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Toản",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "ten": "Vũ Duyên",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": [
+                          {
+                            "ten": "Vũ Thựu",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Nhiễu",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Mậu",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Minh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Bách",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": [
+                                              {
+                                                "ten": "Vũ Long",
+                                                "doi": 11,
+                                                "do_tin_cay": "cao",
+                                                "con": []
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "ten": "Vũ Khải",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Mạnh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Duy",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Đạt",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Đức",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Thành",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": [
+                                              {
+                                                "ten": "Vũ Sơn",
+                                                "doi": 11,
+                                                "do_tin_cay": "cao",
+                                                "con": []
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "ten": "Vũ Tiến",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "ten": "Vũ Lừng",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": [
+                          {
+                            "ten": "(Đang cập nhật)",
+                            "doi": 6,
+                            "do_tin_cay": "thap",
+                            "con": []
+                          }
+                        ]
+                      },
+                      {
+                        "ten": "Vũ Dớm",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": [
+                          {
+                            "ten": "Vũ Miêu",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Miều",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Thái",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Thành",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Trưởng",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Quảng",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Nam",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Hiền",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Tiến",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Đăng",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Khá",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Khôi",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Hưng",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Cường",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Hà",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Hiếu",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      },
+                                      {
+                                        "ten": "Vũ Nghĩa",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Bình",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Minh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Huy",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Duy",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Thuận",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Nam",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          },
+                                          {
+                                            "ten": "Vũ Quân",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "ten": "Vũ Quý",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": [
+                                          {
+                                            "ten": "Vũ Bảo",
+                                            "doi": 10,
+                                            "do_tin_cay": "cao",
+                                            "con": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "ten": "Vũ Mẫn",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Miến",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Thanh",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "(Đang cập nhật)",
+                                        "doi": 9,
+                                        "do_tin_cay": "thap",
+                                        "con": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Xuyến",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Cảnh",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Anh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Khải",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Vương",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Quyền",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Đạt",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      },
+                                      {
+                                        "ten": "Vũ Hưởng",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Xuyên",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Tuyến",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": []
+                                  },
+                                  {
+                                    "ten": "Vũ Tuyên",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": []
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Xuyền",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Huy",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "(Đang cập nhật)",
+                                        "doi": 9,
+                                        "do_tin_cay": "thap",
+                                        "con": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "ten": "Vũ Mô",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Tuất",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Hiền",
                                     "doi": 8,
                                     "do_tin_cay": "cao",
                                     "con": [
@@ -746,141 +1040,6 @@
                                         "doi": 9,
                                         "do_tin_cay": "cao",
                                         "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Quảng",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Nam",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Hiền",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Tiến",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Đăng",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "ten": "Vũ Khá",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Khôi",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Hưng",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Cường",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Hà",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Hiếu",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  },
-                                  {
-                                    "ten": "Vũ Nghĩa",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Bình",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Minh",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Huy",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Duy",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "ten": "Vũ Thuận",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Nam",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      },
-                                      {
-                                        "ten": "Vũ Quân",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "ten": "Vũ Quý",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": [
-                                      {
-                                        "ten": "Vũ Bảo",
-                                        "doi": 9,
-                                        "do_tin_cay": "cao",
-                                        "con": []
                                       }
                                     ]
                                   }
@@ -891,162 +1050,17 @@
                         ]
                       },
                       {
-                        "ten": "Vũ Mẫn",
+                        "ten": "Vũ Vinh",
                         "doi": 5,
                         "do_tin_cay": "cao",
                         "con": [
                           {
-                            "ten": "Vũ Miến",
+                            "ten": "(Đang cập nhật)",
                             "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Thanh",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "(Đang cập nhật)",
-                                    "doi": 8,
-                                    "do_tin_cay": "thap",
-                                    "con": []
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "ten": "Vũ Xuyến",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Cảnh",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Anh",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Khải",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Vương",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Quyền",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Đạt",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  },
-                                  {
-                                    "ten": "Vũ Hưởng",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "ten": "Vũ Xuyên",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Tuyến",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": []
-                              },
-                              {
-                                "ten": "Vũ Tuyên",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": []
-                              }
-                            ]
-                          },
-                          {
-                            "ten": "Vũ Xuyền",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Huy",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "(Đang cập nhật)",
-                                    "doi": 8,
-                                    "do_tin_cay": "thap",
-                                    "con": []
-                                  }
-                                ]
-                              }
-                            ]
+                            "do_tin_cay": "thap",
+                            "con": []
                           }
                         ]
-                      },
-                      {
-                        "ten": "Vũ Mô",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Tuất",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Hiền",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Trưởng",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ten": "Vũ Vinh",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "(Đang cập nhật)",
-                        "doi": 5,
-                        "do_tin_cay": "thap",
-                        "con": []
                       }
                     ]
                   }
@@ -1061,136 +1075,37 @@
       "id": "chi3",
       "ten": "Chi 3",
       "goc": {
-        "ten": "Vũ Nhân",
+        "ten": "Vũ Kính",
         "doi": 1,
         "do_tin_cay": "cao",
         "con": [
           {
-            "ten": "Vũ Hiệu",
+            "ten": "Vũ Nhân",
             "doi": 2,
             "do_tin_cay": "cao",
             "con": [
               {
-                "ten": "Vũ Hữu",
+                "ten": "Vũ Hiệu",
                 "doi": 3,
                 "do_tin_cay": "cao",
                 "con": [
                   {
-                    "ten": "Vũ Ruộng",
+                    "ten": "Vũ Hữu",
                     "doi": 4,
                     "do_tin_cay": "cao",
                     "con": [
                       {
-                        "ten": "Vũ Vân",
+                        "ten": "Vũ Ruộng",
                         "doi": 5,
                         "do_tin_cay": "cao",
                         "con": [
                           {
-                            "ten": "Bà Nguyệt",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": []
-                          }
-                        ]
-                      },
-                      {
-                        "ten": "Vũ Ớt",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Cay",
+                            "ten": "Vũ Vân",
                             "doi": 6,
                             "do_tin_cay": "cao",
                             "con": [
                               {
-                                "ten": "Vũ Tuấn",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Anh",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              },
-                              {
-                                "ten": "Vũ Tỉnh",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": []
-                              },
-                              {
-                                "ten": "Vũ Tuyền",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Ngân",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "ten": "Vũ Ứng",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Cường",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": [
-                                  {
-                                    "ten": "Vũ Khôi",
-                                    "doi": 8,
-                                    "do_tin_cay": "cao",
-                                    "con": []
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ten": "Vũ Cứ (cụ Vệ Cứ)",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "Vũ Giang",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Sít",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": []
-                          }
-                        ]
-                      },
-                      {
-                        "ten": "Vũ Tùy",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Quyền",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Linh",
+                                "ten": "Bà Nguyệt",
                                 "doi": 7,
                                 "do_tin_cay": "cao",
                                 "con": []
@@ -1198,15 +1113,121 @@
                             ]
                           },
                           {
-                            "ten": "Vũ Quý",
+                            "ten": "Vũ Ớt",
                             "doi": 6,
                             "do_tin_cay": "cao",
                             "con": [
                               {
-                                "ten": "Vũ Long",
+                                "ten": "Vũ Cay",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Tuấn",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Anh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "ten": "Vũ Tỉnh",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": []
+                                  },
+                                  {
+                                    "ten": "Vũ Tuyền",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Ngân",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Ứng",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Cường",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Khôi",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "ten": "Vũ Cứ (cụ Vệ Cứ)",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": [
+                          {
+                            "ten": "Vũ Giang",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Sít",
                                 "doi": 7,
                                 "do_tin_cay": "cao",
                                 "con": []
+                              }
+                            ]
+                          },
+                          {
+                            "ten": "Vũ Tùy",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Quyền",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Linh",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": []
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Quý",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Long",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": []
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -1225,42 +1246,114 @@
       "id": "chi4",
       "ten": "Chi 4",
       "goc": {
-        "ten": "Tồn Nghi",
+        "ten": "Vũ Kính",
         "doi": 1,
         "do_tin_cay": "cao",
         "con": [
           {
-            "ten": "Vũ Tiền",
+            "ten": "Tồn Nghi",
             "doi": 2,
             "do_tin_cay": "cao",
             "con": [
               {
-                "ten": "Vũ Hà",
+                "ten": "Vũ Tiền",
                 "doi": 3,
                 "do_tin_cay": "cao",
                 "con": [
                   {
-                    "ten": "Vũ Rộng",
+                    "ten": "Vũ Hà",
                     "doi": 4,
                     "do_tin_cay": "cao",
                     "con": [
                       {
-                        "ten": "Vũ Ẩn",
+                        "ten": "Vũ Rộng",
                         "doi": 5,
                         "do_tin_cay": "cao",
                         "con": [
                           {
-                            "ten": "Vũ Quyết",
+                            "ten": "Vũ Ẩn",
                             "doi": 6,
                             "do_tin_cay": "cao",
                             "con": [
                               {
-                                "ten": "Vũ Thành",
+                                "ten": "Vũ Quyết",
                                 "doi": 7,
                                 "do_tin_cay": "cao",
                                 "con": [
                                   {
-                                    "ten": "Vũ Thịnh",
+                                    "ten": "Vũ Thành",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": [
+                                      {
+                                        "ten": "Vũ Thịnh",
+                                        "doi": 9,
+                                        "do_tin_cay": "cao",
+                                        "con": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Bạo",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": []
+                              },
+                              {
+                                "ten": "Vũ Bảo",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ten": "Vũ Mạch",
+                    "doi": 4,
+                    "do_tin_cay": "cao",
+                    "con": [
+                      {
+                        "ten": "Vũ Tấm (cụ Vệ Tấm)",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": [
+                          {
+                            "ten": "Vũ Thiệp",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Oong",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Dương",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": []
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Đơ",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "Vũ Tuấn",
+                                    "doi": 8,
+                                    "do_tin_cay": "cao",
+                                    "con": []
+                                  },
+                                  {
+                                    "ten": "Vũ Kính",
                                     "doi": 8,
                                     "do_tin_cay": "cao",
                                     "con": []
@@ -1268,127 +1361,62 @@
                                 ]
                               }
                             ]
-                          },
-                          {
-                            "ten": "Vũ Bạo",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": []
-                          },
-                          {
-                            "ten": "Vũ Bảo",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": []
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "ten": "Vũ Mạch",
-                "doi": 3,
-                "do_tin_cay": "cao",
-                "con": [
-                  {
-                    "ten": "Vũ Tấm (cụ Vệ Tấm)",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "Vũ Thiệp",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Oong",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Dương",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": []
-                              }
-                            ]
-                          },
-                          {
-                            "ten": "Vũ Đơ",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "Vũ Tuấn",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": []
-                              },
-                              {
-                                "ten": "Vũ Kính",
-                                "doi": 7,
-                                "do_tin_cay": "cao",
-                                "con": []
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ten": "Vũ Ngự",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": [
-                      {
-                        "ten": "Vũ Giới",
-                        "doi": 5,
-                        "do_tin_cay": "cao",
-                        "con": [
-                          {
-                            "ten": "Vũ Thức",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "(Đang cập nhật)",
-                                "doi": 7,
-                                "do_tin_cay": "thap",
-                                "con": []
-                              }
-                            ]
-                          },
-                          {
-                            "ten": "Vũ Nghi",
-                            "doi": 6,
-                            "do_tin_cay": "cao",
-                            "con": [
-                              {
-                                "ten": "(Đang cập nhật)",
-                                "doi": 7,
-                                "do_tin_cay": "thap",
-                                "con": []
-                              }
-                            ]
                           }
                         ]
                       },
                       {
-                        "ten": "Vũ Húc",
+                        "ten": "Vũ Ngự",
+                        "doi": 5,
+                        "do_tin_cay": "cao",
+                        "con": [
+                          {
+                            "ten": "Vũ Giới",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": [
+                              {
+                                "ten": "Vũ Thức",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "(Đang cập nhật)",
+                                    "doi": 8,
+                                    "do_tin_cay": "thap",
+                                    "con": []
+                                  }
+                                ]
+                              },
+                              {
+                                "ten": "Vũ Nghi",
+                                "doi": 7,
+                                "do_tin_cay": "cao",
+                                "con": [
+                                  {
+                                    "ten": "(Đang cập nhật)",
+                                    "doi": 8,
+                                    "do_tin_cay": "thap",
+                                    "con": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "ten": "Vũ Húc",
+                            "doi": 6,
+                            "do_tin_cay": "cao",
+                            "con": []
+                          }
+                        ]
+                      },
+                      {
+                        "ten": "Vũ Khương",
                         "doi": 5,
                         "do_tin_cay": "cao",
                         "con": []
                       }
                     ]
-                  },
-                  {
-                    "ten": "Vũ Khương",
-                    "doi": 4,
-                    "do_tin_cay": "cao",
-                    "con": []
                   }
                 ]
               }
