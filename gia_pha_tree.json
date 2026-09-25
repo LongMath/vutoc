@@ -1431,17 +1431,17 @@
     "ghi_chu": "Người/nhánh nhập vào họ Vũ, không thuộc huyết thống trực hệ từ Thủy tổ Vũ Kinh.",
     "goc": {
       "ten": "Vũ Thủy",
-      "doi": 8,
+      "doi": 9,
       "do_tin_cay": "cao",
       "con": [
         {
           "ten": "Vũ Quý",
-          "doi": 9,
+          "doi": 10,
           "do_tin_cay": "cao",
           "con": [
             {
               "ten": "Vũ Thịnh",
-              "doi": 10,
+              "doi": 11,
               "do_tin_cay": "cao",
               "con": []
             }
